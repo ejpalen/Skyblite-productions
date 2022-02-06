@@ -341,11 +341,11 @@ footer p {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 81px;
+    top: 77px;
     flex-direction: column;
     background-color: #18191a;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -482,6 +482,7 @@ footer p {
 
   .line {
     top: 77px;
+    z-index: 1;
   }
 }
 
