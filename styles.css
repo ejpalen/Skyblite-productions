@@ -82,13 +82,18 @@ h1 {
   width: 100%;
 }
 
+.hero-text,
+.hero-image {
+  margin: 0px 20px;
+}
+
 .hero-image img {
   width: 500px;
 }
 
 .hero-text h1 {
   font-size: 90px;
-  width: 600px;
+  width: 540px;
   margin-bottom: 30px;
 }
 
