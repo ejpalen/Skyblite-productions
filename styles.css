@@ -85,22 +85,31 @@ h1 {
 .hero-text,
 .hero-image {
   margin: 0px 20px;
+  padding-top: 40px;
 }
 
 .hero-image img {
   width: 500px;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: -25px;
+}
+
 .hero-text h1 {
-  font-size: 90px;
+  font-size: 80px;
+  font-weight: 500;
   width: 580px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .hero-text a {
   background: #3e65fb;
   padding: 20px 25px;
   transition: all ease-in-out 0.2s;
+  width: fit-content;
 }
 
 .hero-text a:hover {
@@ -420,9 +429,23 @@ footer p {
     height: auto;
   }
 
+  .hero-text,
+  .hero-image {
+    padding-top: 20px;
+  }
+
   .hero-text {
     width: auto;
   }
+
+  .hero-text a {
+    margin: 0 auto;
+  }
+
+  .hero-text h1 {
+    margin-bottom: 10px;
+  }
+
   main {
     margin-top: 100px;
   }
@@ -515,7 +538,7 @@ footer p {
 @media only screen and (max-width: 650px) {
   .hero-text h1 {
     width: 380px;
-    margin: 0px auto 40px;
+    margin: 0px auto 20px;
   }
 }
 
