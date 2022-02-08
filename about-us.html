@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logoskysmall2a.png" alt=""
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="gallery.html" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="#top" class="nav-link active">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact-us.html" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <main >
+      <div class="wrapper id="top"">
+        <div class="blank"></div>
+        <div class="aboutus">
+          <div class="owner-image">
+            <img src="images/owner-image.png" alt="" />
+          </div>
+          <div class="details">
+            <h1>About Us</h1>
+            <p>
+              Skyblite Events Production is a photography service business that
+              offers services for Headshots, Portraits, Corporate, Events,
+              Parties, Family, Group, Individual, Maternity, and Newborn, but
+              they specialize in debut photoshoots. This business also offers
+              affordable promos and packages. This business was founded in the
+              year 2017 with Deborah Anne Emong as its current owner, also one
+              of the main photographers. It is located at 270 Blk. 8 T. Alonzo
+              Extn. West Rembo, Makati City. Currently, it is composed of 5-10
+              staff members who are photographers, videographers, photo and
+              video editors, and drone pilots.
+            </p>
+          </div>
+        </div>
+
+        <footer>
+          <img src="images/logoskysmall2a.png" alt="" />
+          <p>COPYRIGHT © 2021 EDGAR PALEN JR.</p>
+          <div>
+            <a href="https://www.instagram.com/skyblite/" target="_blank">
+              <img src="images/instagram.png" alt="" />
+            </a>
+            <a
+              href="https://www.facebook.com/skybliteproductions"
+              target="_blank"
+              ><img src="images/facebook.png" alt="" />
+            </a>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const navLink = document.querySelectorAll(".nav-link");
+
+      hamburger.addEventListener("click", mobileMenu);
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
