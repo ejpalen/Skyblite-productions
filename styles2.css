@@ -189,6 +189,17 @@ footer {
   }
 }
 
+@media only screen and (max-width: 520px) {
+  .contact-header,
+  form {
+    width: 85%;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 740px) {
   .contactus-header h1 {
     width: 440px;
@@ -208,17 +219,16 @@ footer {
     text-align: center;
   }
 
-  .contact-header,
-  form {
-    width: 85%;
-  }
-
-  form textarea {
-    width: 100%;
-  }
-
   .contactus-header h1 {
     font-size: 40px;
     width: 281px;
+  }
+
+  .wrapper {
+    margin-top: 0;
+  }
+
+  .contactus-header h1 {
+    margin-top: 0px;
   }
 }
