@@ -228,7 +228,8 @@ form {
   flex-direction: column;
 }
 
-form input {
+form input,
+form textarea {
   width: 350px;
   margin: 10px 0px;
   padding: 10px;
@@ -236,9 +237,17 @@ form input {
   outline: none;
   border: none;
   border-radius: 0px;
+  background: none;
+  border: 2px solid white;
 }
 
-form input:focus {
+form input::placeholder,
+form textarea::placeholder {
+  color: white;
+}
+
+form input:focus,
+form textarea:focus {
   box-shadow: 3px 3px 0px 0px #809cf5;
   transition: all ease-in-out 0.2s;
   outline: none;
@@ -335,6 +344,18 @@ footer p {
   .promos,
   .promos-title {
     margin-left: 60px;
+  }
+}
+
+@media (min-width: 881px) and (max-width: 1050px) {
+  .promo h2 {
+    width: 300px;
+  }
+}
+
+@media (min-width: 881px) and (max-width: 1000px) {
+  footer {
+    padding: 25px 80px;
   }
 }
 
@@ -498,6 +519,16 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  footer p {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 25px 20px;
+  }
+}
+
 @media only screen and (max-width: 520px) {
   .hero-image img {
     width: 360px;
@@ -528,7 +559,12 @@ footer p {
   form input {
     width: 100%;
   }
+
+  form textarea {
+    width: 100%;
+  }
 }
+
 @media only screen and (max-width: 450px) {
   .hero-image img {
     width: 320px;
@@ -548,14 +584,6 @@ footer p {
 
   .promo h1 {
     font-size: 32px;
-  }
-
-  footer p {
-    font-size: 12px;
-  }
-
-  footer {
-    padding: 25px 20px;
   }
 }
 
