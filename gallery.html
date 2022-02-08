@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logoskysmall2a.png" alt=""
+      /></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#top" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link active">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="#how-to" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#nutrition" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Gallery</h1>
+    </header>
+
+    <div class="shoots-wrapper">
+      <div class="shoot debut">
+        <div class="shoot-title">
+          <h1>Debut Photoshoots</h1>
+          <a href="">
+            <p>View all</p>
+          </a>
+        </div>
+        <div class="shoot-images">
+          <div class="shoot-images-left vertical">
+            <img src="images/gallery/debut-1.png" alt="" />
+          </div>
+          <div class="shoot-images-middle horizontal">
+            <img src="images/gallery/debut-2.png" alt="" />
+            <img src="images/gallery/debut-3.png" alt="" />
+          </div>
+          <div class="shoot-images-right vertical">
+            <img src="images/gallery/debut-4.png" alt="" />
+          </div>
+        </div>
+        <a class="view-all" href="">
+          <p>View all</p>
+        </a>
+      </div>
+
+      <div class="shoot family">
+        <div class="shoot-title">
+          <h1>Family Photoshoots</h1>
+          <a href="">
+            <p>View all</p>
+          </a>
+        </div>
+        <div class="shoot-images">
+          <div class="shoot-images-left vertical">
+            <img src="images/gallery/family-1.png" alt="" />
+          </div>
+          <div class="shoot-images-middle horizontal">
+            <img src="images/gallery/family-2.png" alt="" />
+            <img src="images/gallery/family-3.png" alt="" />
+          </div>
+          <div class="shoot-images-right vertical">
+            <img src="images/gallery/family-4.png" alt="" />
+          </div>
+        </div>
+        <a class="view-all" href="">
+          <p>View all</p>
+        </a>
+      </div>
+
+      <div class="shoot individual">
+        <div class="shoot-title">
+          <h1>Individual Photoshoots</h1>
+          <a href="">
+            <p>View all</p>
+          </a>
+        </div>
+        <div class="shoot-images">
+          <div class="shoot-images-left vertical">
+            <img src="images/gallery/individual-1.png" alt="" />
+          </div>
+          <div class="shoot-images-middle horizontal">
+            <img src="images/gallery/individual-2.png" alt="" />
+            <img src="images/gallery/individual-3.png" alt="" />
+          </div>
+          <div class="shoot-images-right vertical">
+            <img src="images/gallery/individual-4.png" alt="" />
+          </div>
+        </div>
+        <a class="view-all" href="">
+          <p>View all</p>
+        </a>
+      </div>
+
+      <div class="shoot corporate">
+        <div class="shoot-title">
+          <h1>Corporate Photoshoots</h1>
+          <a href="">
+            <p>View all</p>
+          </a>
+        </div>
+        <div class="shoot-images">
+          <div class="shoot-images-left vertical">
+            <img src="images/gallery/corporate-1.png" alt="" />
+          </div>
+          <div class="shoot-images-middle horizontal">
+            <img src="images/gallery/corporate-2.png" alt="" />
+            <img src="images/gallery/corporate-3.png" alt="" />
+          </div>
+          <div class="shoot-images-right vertical">
+            <img src="images/gallery/corporate-4.png" alt="" />
+          </div>
+        </div>
+        <a class="view-all" href="">
+          <p>View all</p>
+        </a>
+      </div>
+
+      <div class="shoot maternity">
+        <div class="shoot-title">
+          <h1>Maternity Photoshoots</h1>
+          <a href="">
+            <p>View all</p>
+          </a>
+        </div>
+        <div class="shoot-images">
+          <div class="shoot-images-left vertical">
+            <img src="images/gallery/maternity-1.png" alt="" />
+          </div>
+          <div class="shoot-images-middle horizontal">
+            <img src="images/gallery/maternity-2.png" alt="" />
+            <img src="images/gallery/maternity-3.png" alt="" />
+          </div>
+          <div class="shoot-images-right vertical">
+            <img src="images/gallery/maternity-4.png" alt="" />
+          </div>
+        </div>
+        <a class="view-all" href="">
+          <p>View all</p>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <img src="images/logoskysmall2a.png" alt="" />
+      <p>SKYBLITE © 2022. ALL RIGHTS RESERVED.</p>
+      <div>
+        <a href="https://www.instagram.com/skyblite/" target="_blank">
+          <img src="images/instagram.png" alt="" />
+        </a>
+        <a href="https://www.facebook.com/skybliteproductions" target="_blank"
+          ><img src="images/facebook.png" alt="" />
+        </a>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const navLink = document.querySelectorAll(".nav-link");
+
+      hamburger.addEventListener("click", mobileMenu);
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
