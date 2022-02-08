@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+h@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -93,7 +93,7 @@ h1 {
 
 .hero-text h1 {
   font-size: 90px;
-  width: 540px;
+  width: 580px;
   margin-bottom: 30px;
 }
 
